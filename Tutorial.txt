@@ -1,0 +1,21 @@
+** Build a github account **
+** Install git **
+** Build a folder to upload/download/share the repositories to github **
+
+0.1. Create a new repository in github and add a README file.
+0.2. Enter the repository and copy the web URL in button "Code".
+
+1. Open the cmd at the folder that is in order to upload/download the repositories.
+
+2. Write the code "git clone URL" and URL is that we copy first.
+
+3. Write the code "cd RepositoryName" and RepositoryName is the name of the repository which we download.
+
+4. Write the code "git checkout main"
+
+5. Write the code "git add ."
+
+6. Write the code "git commit -m "Text"" and Text is that the introduction for the repository
+
+7. Write the code "git push origin main" 
+
