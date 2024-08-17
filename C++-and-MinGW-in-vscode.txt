@@ -1,0 +1,49 @@
+### Original Tutorial
+https://code.visualstudio.com/docs/cpp/config-mingw
+
+### This is the tutorial for install C++ in VScode with MinGW(Windows).
+
+
+Steps
+1. Download VScode(choose windows) and install it.
+https://code.visualstudio.com/Download
+
+2. After complete the installation, to 'extenstions' search 'C++' and select the extenstion with Microsoft certification and install it. 
+--------------------------------------------------------------------------
+C/C++, microsoft.com, C/C++ IntelliSense, debugging, and code browsing.
+--------------------------------------------------------------------------
+
+3. Download MinGW and install it. 
+https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe
+
+4. After installing MinGW, open it and you will see
+----------------------
+willi@Willie UCRT64 ~
+$
+----------------------
+
+In this terminal, install the MinGW-w64 toolchain by running the following command:
+"pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain" and enter.
+
+Enter Y when prompted whether to proceed with the installation.
+
+Next, waiting for completing the installation.
+
+5. Next, we want to add the path to your MinGW-w64 bin folder to the Windows PATH environment variable.
+
+Open 'edit environment variables for your account' or '編輯您的帳戶的環境變數'.
+Select 'Path' in 'user variable'. Build a new environment: 'C:\msys64\ucrt64\bin'.
+
+6. To cmd enter 'gcc --version' to check your MinGW installation
+
+7. Entry VScode, search '>C/C++:Select IntelliSense Configuration' at top and select 'use gcc.exe'.
+
+8. Then you complete the installation for C++ in VScode. 
+ 
+
+
+
+
+
+
+

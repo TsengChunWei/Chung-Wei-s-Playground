@@ -1,0 +1,24 @@
+### If you have no Anaconda ###
+0-1. Download Anaconda and install it
+https://www.anaconda.com/download/success
+
+### In VScode ###
+1-1. In terminal, in launch profile, add new terminal, then select "default profile". Final select "select command prompt".
+https://csweb.wooster.edu/mionescu/cs232/guides/vs-code-default-terminal/
+
+1-2. Input "conda create --name CUDA python=3.12" to create a new and fresh environment to install CUDA. You can input your own name to replace "CUDA", here we just use "CUDA" to make example. "python=3.12" means the version of python you want to install. Then the Prompt will show "Proceed ([y]/n)", input "y"(which means "yes" to agree to this process). Then you will have completed the environment installation.
+
+1-3. Input "conda activate CUDA" to entry the environment you build.
+
+1-4. Input "conda install -c conda-forge cudatoolkit=11.8 cudnn=8.9" to install cudatoolkit to match the corresponding cudnn version.
+https://developer.nvidia.com/rdp/cudnn-archive
+
+1-5. Input "conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia" to install the pytorch on CUDA.
+
+1-6. Input "python -c "import torch; print(torch.cuda.is_available())"" to check if torch is running on GPU. If it shows 'True', it means you have successfully installed PyTorch on CUDA, and you can run PyTorch on GPU.
+
+### Choose the Environment ###
+2-1. There is a button that show the current python environment at lower right corner. Click it and choose the environment you created previously.
+
+2-2. If you want to install other packages, input "pip install package_name" to install. 
+
